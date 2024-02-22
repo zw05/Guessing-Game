@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title-container">
+        <div id="game-title">Number Guessing Game</div>
+    </div>
+    <div id="start-container">
+        <button type="button" class="btn" id="start-btn" onclick="startGame()">Start Game!</button>
+    </div>
+    <div id="game">
+        <div id="guesses">
+            <div id="life-count">
+                <img src="heart.png" alt="life icon">
+                <div id="count">10</div>
+            </div>
+            <div id="text">Try to guess a number from 1-100!</div>
+        </div>
+        <div id="input-container">
+            <input type="text" id="guess-input" placeholder="Guess a Number!">
+            <button class="btn" id="submit-btn" type="submit" onclick="checkGuess()">Guess!</button>
+            <button class="btn" id="restart-btn" type="reset" onclick="restartGame()">Play Again?</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
